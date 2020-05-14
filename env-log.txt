@@ -1,0 +1,20 @@
+#Applications
+git
+svn
+speedcrunch
+notepad++
+atom ($apm config set strict-ssl false; $apm install atom-beautify; linter; apm install linter-jshint; apm install prettier-atom)
+python
+pycharm
+visual studio
+
+#GIT Repos + $pip install -r requirements.txt
+at 
+dashboard-frontend 
+dashboard-backend
+
+#Java Script Env + $npm install
+node
+
+
+

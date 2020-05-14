@@ -1,0 +1,25 @@
+Docker Cheat Sheet
+docker container ls
+docker container rm "id" --force
+docker build --add-host=gitlab-srv.transchip.com:106.199.15.49 --add-host=dlp2-wcg01.transchip.com:106.199.15.25 application-cis/dashboard-backend . 
+docker build -f Dockerfile_37 -t application-cis/dashboard-backend-dev .
+docker run --name cis-dashboard-backend -d -p 8289:80 -v /stage/CIS_AUTO:/stage/CIS_AUTO --restart unless-stopped application-cis/dashboard-backend
+docker run --name cis-dashboard-backend-dev -d -p 8189:80 -v /stage/CIS_AUTO:/stage/CIS_AUTO --restart unless-stopped application-cis/dashboard-backend-dev
+docker run -d --restart unless-stopped --name esearch --net -v /mnt/local/elasticsearch/data:/usr/share/elasticsearch/data -p 9222:9200 9322:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.6.1
+
+Docker Bash
+docker exec -it <container id> bash
+dockeer stop <container id>
+dockeer kill <container id>
+dockeer rm <container id>
+
+docker build -t rp .
+docker run -it --rm rp
+# The --rm option will clean up your container after use. It’s a good habit to use --rm to avoid filling up your system with stale Docker containers.
+
+## Docker Reindex script
+>docker build -t es-indexer .
+>docker run -v /stage/CIS_AUTO:/stage/CIS_AUTO es-indexer hm1 reindex dark
+
+
+			  
