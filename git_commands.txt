@@ -1,0 +1,62 @@
+git clone <repo url>    	- get repo (all versions) from server
+git add <file>				- add file to “staging area”
+git commit –m “<message>”	- add “staged files” to local repository
+git push					- push “local versions” to remote 							  repository
+
+git commit --amend 			- redo commit
+git status					- where we are now?
+
+git reset HEAD <file>      	- unstage file
+git checkout -- <file>		- discard file in working directory, replacing by commited
+
+git branch testing 			- create new branch pointing to current commit
+git log --oneline –decorate - print onlined log with commits and branch pointers
+git rev-parse HEAD			- print current commit ID
+git checkout testing 		- move HEAD to point to "testing" branch
+git commit -a -m 'a change' - add tracked files and commit
+git merge master			- merge master branch to the current branch
+git branch -d hotfix 		- delete hotfix branch
+git branch					- show branches, asterix on current branch
+git branch -v 				- show branches, verbosly
+git branch --merged			- show merged branches
+git branch --no-merged		- show unmerged branches
+
+git push origin serverfix 	- push to remote branch with same name
+
+git push origin serverfix:awesomebranch
+							- push to remote branch named awesomebranch
+							
+git checkout -b serverfix origin/serverfix 
+							- create new branch serverfix that starts on
+							  commit that pointed by origin/serverfix
+
+git checkout --track origin/serverfix 
+							- shortcut to git checkout -b serverfix origin/serverfix
+
+git checkout serverfix		- shortcut to above
+
+git checkout -b sf origin/serverfix	
+							- create local branch with different name to track 
+							  remote branch 
+							  
+git branch -u origin/serverfix 
+							- change remote branch
+							
+git branch –vv				- print local vs remote branches, asterix on current
+
+git branch -a				  show all local branches including branches that track remote 
+
+git pull					- fetch remote + merge remote to current
+
+git push origin --delete serverfix 
+							- remove the pointer from the server
+							
+git submodule add https://github.com/chaconinc/DbConnector
+							- add submodule
+							
+git clone --recurse-submodules https://github.com/chaconinc/MainProject 
+							- clone project with submodule
+
+git submodule update --remote DbConnector 
+							- update submodule pointer
+
