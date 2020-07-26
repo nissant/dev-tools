@@ -7,6 +7,9 @@ docker run --name cis-dashboard-backend -d -p 8289:80 -v /stage/CIS_AUTO:/stage/
 docker run --name cis-dashboard-backend-dev -d -p 8189:80 -v /stage/CIS_AUTO:/stage/CIS_AUTO --restart unless-stopped application-cis/dashboard-backend-dev
 docker run -d --restart unless-stopped --name esearch --net -v /mnt/local/elasticsearch/data:/usr/share/elasticsearch/data -p 9222:9200 9322:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.6.1
 
+docker build -f Dockerfile -t cis-dashboard-frontend-dev .
+docker run --name cis-dashboard-frontend-dev -d -p 8489:80 -v /stage/CIS_AUTO:/stage/CIS_AUTO --restart unless-stopped cis-dashboard-frontend-dev
+
 Docker Bash
 docker exec -it <container id> bash
 dockeer stop <container id>
