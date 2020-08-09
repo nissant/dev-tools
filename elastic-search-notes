@@ -1,5 +1,0 @@
-http://planet31:9200/_aliases?pretty=true
-
-## Docker Reindexing
-docker build -t es-indexer .
-docker run -v /stage/CIS_AUTO:/stage/CIS_AUTO es-indexer HM1 reindex power
