@@ -13,6 +13,10 @@ Then:
 ```
 $ python ../../gitlab/AT/AT/AT.py
 ```
+rm #api_rw_frame_timing_dynamic_frame_rate_enable 0x1
+stream off
+stream on
+
 ## Setting Up at_conf.txt or sim_conf.txt
 | Switch  											| Description 	|
 | ------------- 									| ------------- |
@@ -37,8 +41,8 @@ $ python ../../gitlab/AT/AT/AT.py
 > loads --setfile=C:\work\GW1\REPO\ASIC\EVT0_1\GW1_MCD_EVT0_1_SVN#22409\Setfiles\Setfiles_with_TNP\GW1MCD_EVT0_1_30fps_bin2_4fd_4624x3468_TcF_DPHY2388M_#4.tset
 > loads --setfile=C:\work\GW1\REPO\ASIC\EVT0_1\GW1_MCD_EVT0_1_SVN#22409\Setfiles\Setfiles_with_TNP\GW1MCD_EVT0_1_13fps_nobin_Full_9248x6936_TcF_DPHY2388M_#1.tset
 > loads --setfile=C:\work\GW2\REPO\ASIC\EVT0_1\GW2XX_EVT0_192Mclk_30fps_8K_CPHY2480.tset
-> loads --setfile=C:\work\GW2\REPO\ASIC\EVT0_1\GW2XX_EVT0_192Mclk_214fps_4MP_2320x1736_CPHY2480.tset
-> loads --setfile=C:\work\GW2\REPO\ASIC\EVT0\Operational\MIPI\GW2XX\DPHY1500\GW2XX_EVT0_120fps_bin4_BayerCF_FHD_DPHY1500_Modified.tset
+> loads --setfile=C:\projects\HM2\REPO\ASIC\EVT0\Operational\MIPI\HM2SP\HM2SP_EVT0_30fps_bin3_12MP_4000x3000_NO_HDR_FDSUM_CPHY1498M_19.2MHz_Mode5_#5.tset
+> loads --setfile=C:\projects\HM2\REPO\ASIC\EVT0\Operational\MIPI\HM2SP\HM2SP_EVT0_10fps_nobin_Full_108MP_12000x9000_CPHY2010M_19.2MHz_Mode1_#1.tset
 ```
 
 ## AT CLI
@@ -61,7 +65,10 @@ $ python ../../gitlab/AT/AT/AT.py
 > test xml bench_light_IQC_test.xml --repo=..\Repo\tests --keepres --dbres
 > test xml bench_wdr_ratio_IQC.xml --repo=..\Repo\tests --keepres --dbres
 > test xml bench_LCL_HCL_CR_hardcoded.xml --repo=..\Repo\tests --keepres
+
+> test xml bench_IQC_unit_test.xml --repo=..\Repo\tests --keepres
+
 > test xml bench_dark_IQC_test.xml --repo=..\Repo\tests --keepres
-> test xml dark_IQC_full_refactored_hardcoded.xml --repo=..\Repo\tests --keepres
+> test xml bench_light_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_SHBN_OECF.xml --repo=..\Repo\tests --keepres
 ```

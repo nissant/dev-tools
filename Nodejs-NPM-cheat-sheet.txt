@@ -18,3 +18,6 @@ npm list <pkg>
 5.	Pull latest frontend GIT repo.
 6.	$ npm install
 7.	$ npm start
+
+# Building Production Build (according to package.json config)
+npm run build
