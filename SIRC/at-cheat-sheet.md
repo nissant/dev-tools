@@ -66,8 +66,7 @@ stream on
 > test xml bench_wdr_ratio_IQC.xml --repo=..\Repo\tests --keepres --dbres
 > test xml bench_LCL_HCL_CR_hardcoded.xml --repo=..\Repo\tests --keepres
 
-> test xml bench_IQC_unit_test.xml --repo=..\Repo\tests --keepres
-
+> test xml bench_IQC_unit_test.xml --repo=..\Repo\tests --keepres --dbres
 > test xml bench_dark_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_light_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_SHBN_OECF.xml --repo=..\Repo\tests --keepres

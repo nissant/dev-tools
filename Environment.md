@@ -1,3 +1,35 @@
+## Applications
+chrome
+MobaXtem
+postman
+mySQL
+
+rocketchat
+7zip
+speedcrunch
+
+Visual Studiio
+
+python
+git
+cmder
+
+PyCharm
+notepad++
+VSCode
+
+
+##GIT Repos + $pip install -r requirements.txt
+at 
+dashboard-frontend 
+dashboard-backend
+
+##Java Script + VSCode extension
+nodeJS
+node
+prettier
+es-lint
+
 #Applications
 git
 svn
@@ -15,6 +47,9 @@ dashboard-backend
 
 #Java Script Env + $npm install
 node
+
+
+
 
 
 
