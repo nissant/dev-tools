@@ -1,0 +1,40 @@
+{
+    "repo_list": [
+        {
+            "name": "AT",
+            "repo_dir": "projects\\gitlab\\AT\\",
+            "git_url": "git@gitlab-srv:Application-CIS/AT.git",
+            "branch": "develop",
+            "pre_install": 0,
+            "install": 0,
+            "editable": 1,
+            "post_install": 1,
+            "post_install_py_script": "install.py",
+            "requirement_file_name": ""
+        },
+        {
+            "name": "simpl",
+            "repo_dir": "projects\\gitlab\\simpl\\",
+            "git_url": "git@gitlab-srv:Application-CIS/simpl.git",
+            "branch": "master",
+            "pre_install": 0,
+            "install": 1,
+            "editable": 1,
+            "post_install": 0,
+            "post_install_py_script": "",
+            "requirement_file_name": ""
+        },
+        {
+            "name": "app_utils",
+            "repo_dir": "projects\\gitlab\\app_utils\\",
+            "git_url": "git@gitlab-srv:Application-CIS/app_utils.git",
+            "branch": "develop",
+            "pre_install": 0,
+            "install": 1,
+            "editable": 1,
+            "post_install": 0,
+            "post_install_py_script": "",
+            "requirement_file_name": ""
+        }
+    ]
+}

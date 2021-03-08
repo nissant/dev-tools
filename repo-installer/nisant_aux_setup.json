@@ -1,0 +1,28 @@
+{
+    "repo_list": [
+        {
+            "name": "ml-auto-tune",
+            "repo_dir": "projects\\gitlab\\ml-auto-tune\\",
+            "git_url": "git@gitlab-srv:Application-CIS/dashboard-frontend.git",
+            "branch": "develop",
+            "pre_install": 0,
+            "install": 0,
+            "editable": 0,
+            "post_install": 0,
+            "post_install_py_script": "",
+            "requirement_file_name": ""
+        },
+        {
+            "name": "SircApplicationMain",
+            "repo_dir": "projects\\gitlab\\SircApplicationMain\\",
+            "git_url": "git@gitlab-srv:Application-CIS/SircApplicationMain.git",
+            "branch": "develop",
+            "pre_install": 0,
+            "install": 0,
+            "editable": 0,
+            "post_install": 0,
+            "post_install_py_script": "",
+            "requirement_file_name": ""
+        }
+    ]
+}
