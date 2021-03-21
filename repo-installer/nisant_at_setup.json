@@ -10,7 +10,8 @@
             "editable": 1,
             "post_install": 1,
             "post_install_py_script": "install.py",
-            "requirement_file_name": ""
+            "requirement_file_list": "",
+            "ignore": 0
         },
         {
             "name": "simpl",
@@ -22,7 +23,8 @@
             "editable": 1,
             "post_install": 0,
             "post_install_py_script": "",
-            "requirement_file_name": ""
+            "requirement_file_list": "",
+            "ignore": 0
         },
         {
             "name": "app_utils",
@@ -34,7 +36,8 @@
             "editable": 1,
             "post_install": 0,
             "post_install_py_script": "",
-            "requirement_file_name": ""
+            "requirement_file_list": "",
+            "ignore": 1
         }
     ]
 }

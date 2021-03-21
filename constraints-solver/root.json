@@ -1,0 +1,5 @@
+{
+"default_config": ".\\dflt-cfg.json",
+"domain_config": ".\\domains-cfg.json",
+"constraints_functions": ".\\cnstr-func-cfg.json"
+}

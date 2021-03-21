@@ -70,4 +70,6 @@ stream on
 > test xml bench_dark_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_light_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_SHBN_OECF.xml --repo=..\Repo\tests --keepres
+> test xml bench-palladium-ml-data-collection.xml --repo=../Repo/tests/ml-tuning
 ```
+

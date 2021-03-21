@@ -1,0 +1,11 @@
+{
+"functions": {
+	"f1":{
+	"param": "mm,bb",
+	"body": "return(mm + 2 == bb)"}
+},
+"constraints": [
+        ["NotInSetConstraint([6])",[]],
+		["FunctionConstraint(f1)",["d", "e.m"]]
+    ]  
+}
