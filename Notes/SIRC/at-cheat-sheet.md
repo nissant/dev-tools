@@ -11,7 +11,7 @@ $ cd C:/projects/GW1/AT-ASIC
 ```
 Then:
 ```
-$ python ../../gitlab/AT/AT/AT.py
+python ../../gitlab/AT/AT/AT.py
 ```
 rm #api_rw_frame_timing_dynamic_frame_rate_enable 0x1
 stream off
@@ -71,5 +71,10 @@ stream on
 > test xml bench_light_IQC_test.xml --repo=..\Repo\tests --keepres
 > test xml bench_SHBN_OECF.xml --repo=..\Repo\tests --keepres
 > test xml bench-palladium-ml-data-collection.xml --repo=../Repo/tests/ml-tuning
+```
+
+## Run Retrospective Test
+```
+python ..\..\gitlab\at\at\at.py --retrospective=C:\projects\HM3\REPO\Tests\ml-tuning\retrospective-ml-data-collection.json --test_mode
 ```
 
