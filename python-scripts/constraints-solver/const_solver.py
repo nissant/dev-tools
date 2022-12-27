@@ -275,7 +275,7 @@ if __name__ == "__main__":
     time_out_per_iteration = 20
     out_subdir = None
     cfgs_lim = 100000
-    in_dir = ".\\"
+    in_dir = "\\"
     subdir_enumerator = 0
 
     base_wd = ".\\workdir"
